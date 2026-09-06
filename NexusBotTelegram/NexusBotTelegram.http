@@ -1,0 +1,6 @@
+@NexusBotTelegram_HostAddress = http://localhost:5130
+
+GET {{NexusBotTelegram_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

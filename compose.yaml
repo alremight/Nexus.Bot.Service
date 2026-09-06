@@ -1,0 +1,6 @@
+﻿services:
+  nexusbottelegram:
+    image: nexusbottelegram
+    build:
+      context: .
+      dockerfile: NexusBotTelegram/Dockerfile

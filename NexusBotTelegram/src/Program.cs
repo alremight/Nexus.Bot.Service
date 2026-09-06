@@ -81,6 +81,7 @@ public sealed class TelegramBotService(
                 /id — показать ID чата
                 /echo <текст> — повторить текст
                 """,
+                messageThreadId: message.MessageThreadId,
                 cancellationToken: cancellationToken);
 
             return;
@@ -91,6 +92,7 @@ public sealed class TelegramBotService(
             await bot.SendMessage(
                 message.Chat.Id,
                 "Доступные команды: /start, /help, /ping, /id, /echo",
+                messageThreadId: message.MessageThreadId,
                 cancellationToken: cancellationToken);
 
             return;
@@ -101,6 +103,7 @@ public sealed class TelegramBotService(
             await bot.SendMessage(
                 message.Chat.Id,
                 "Pong! 🏓",
+                messageThreadId: message.MessageThreadId,
                 cancellationToken: cancellationToken);
 
             return;
@@ -111,6 +114,7 @@ public sealed class TelegramBotService(
             await bot.SendMessage(
                 message.Chat.Id,
                 $"Chat ID: {message.Chat.Id}",
+                messageThreadId: message.MessageThreadId,
                 cancellationToken: cancellationToken);
 
             return;

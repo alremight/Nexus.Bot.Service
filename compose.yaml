@@ -4,3 +4,5 @@
     build:
       context: .
       dockerfile: NexusBotTelegram/Dockerfile
+    environment:
+      Telegram__Token: ${TELEGRAM_BOT_TOKEN}
